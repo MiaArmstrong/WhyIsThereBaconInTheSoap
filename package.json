@@ -1,0 +1,27 @@
+{
+  "name": "whyistherebaconinthesoap",
+  "version": "1.0.0",
+  "description": "Test Automation Sample utilizing Node.js, CucumberJS, Selenium Webdriver, NPM, and Chai",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/cucumber-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiaArmstrong/WhyIsThereBaconInTheSoap.git"
+  },
+  "author": "Mia Armstrong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiaArmstrong/WhyIsThereBaconInTheSoap/issues"
+  },
+  "homepage": "https://github.com/MiaArmstrong/WhyIsThereBaconInTheSoap#readme",
+  "dependencies": {
+    "chromedriver": "^88.0.0",
+    "selenium-webdriver": "^3.6.0"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.0.0",
+    "@types/cucumber": "^7.0.0"
+  }
+}
