@@ -49,4 +49,16 @@ Other Information:
 
 This test suite is designed to run on Chrome. This test suite was developed on Windows but should be able to run on Windows or Mac (Chrome).
 
+If you want to see the cucumber report (and I know you do!) you can follow the link in the terminal "View your Cucumber Report at:"
+If you don't see a link and instead see a box with instructions on how to set up the report, you will need to set two environmental variables. 
+
+To set environmental variables in the VS code terminal:
+`$env:CUCUMBER_PUBLISH_TOKEN='db2d7cc9-cf9e-4707-a601-769ff68d6dee'`
+and then
+`$env:CUCUMBER_PUBLISH_ENABLED='true'`
+
+that's it. Now run the test suite using the same `npm test` command and there will be a link you can follow at the bottom of the test results to see the cucumber report. You will need to login to Gitlab to see the report.
+
+
+
 
