@@ -10,7 +10,7 @@ Initial Setup Guide:
 5. Install Git
 6. Clone Repo from Github 
 7. Install Cucumber-js
-8. Install Chai
+8. Install Node-Fetch
 
 ---
 
@@ -29,6 +29,8 @@ Initial Setup Guide:
 Note: Alternately (to 5 and 6) you can just install git bash and then navigate to the parent folder you want to store your version of the repository in, and open a git bash window there. Then you just do `git clone https://github.com/MiaArmstrong/WhyIsThereBaconInTheSoap.git`. Once that is complete you just open that folder from VS Code. 
 
 7. From the command line or the terminal in VS Code: install cucumber-js by entering `npm install --save-dev @cucumber/cucumber` (cucumber is a test framework for behavior driven JavaScript development - this is so we can write tests in Gherkin and use feature files.)
+
+8. From the command line or the terminal in VS Code: install node-fetch by entering `npm install node-fetch` (used to fetch API directly)
 
 
 If you need more guidance [here](https://www.youtube.com/watch?v=Fk12ELJ9Bww) is a good video on how to install and use git on VS Code.
