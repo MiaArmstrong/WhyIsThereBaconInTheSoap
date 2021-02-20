@@ -69,6 +69,9 @@ Then('the temperature in Bacon, Indiana will be above freezing on Saturday', asy
     assert.deepStrictEqual(parseInt(temperature) > 32, true, "the temperature in Bacon, Indiana will be above freezing on Saturday.");
 });
 
+/**
+ * If a test fails, attach a screenshot to the report
+ */
 After(function (testCase) {
     var world = this;
     if (testCase.result.status === Status.FAILED) {

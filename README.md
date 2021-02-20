@@ -61,6 +61,15 @@ and then
 
 that's it. Now run the test suite using the same `npm test` command and there will be a link you can follow at the bottom of the test results to see the cucumber report. You will need to login to Gitlab to see the report.
 
+# Approach:
+
+- This framework uses page object model. All the reusable generic functions are located in the base page. The page specific functions are located on their specific page (googleSearchPage, etc.). All the functions that drive the test steps are in the Step Definition file. All the BDD scenarios/ steps are in the feature file. The locators are organized at the top of each page object file for ease of access for updates, etc. 
+
+- All the locators are using xpaths but could use other types of locators. 
+
+- The API request is done using node-fetch. The API endpoint was found through research but is static becasue it represents a physical location so although I could have gotten that endpoint programmatically I chose to use get the endpoint and set it. 
+
+- More work could be done to customize the cucumber report. I would like to see the assertions for each step in the report itself. I would also like to set the variables when the test is run instead of having to do it manually. 
 
 
 

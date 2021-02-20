@@ -79,14 +79,6 @@ class BasePage {
         await ddSelection.click();
     }
 
-    /**
-     * Take a screenshot of the current page and save it to a png file
-     */
-    async screenShot(){
-        await driver.takeScreenshot().then(function(data){
-            fs.writeFileSync('img.png', data, 'base64');
-        });
-    }
 }
 
 module.exports = BasePage;
