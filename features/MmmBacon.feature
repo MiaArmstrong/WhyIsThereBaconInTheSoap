@@ -12,5 +12,5 @@ Feature: Mmmm Bacon
         Then the first search result returned will be for the Wikipedia article about bacon, the meat product
             And somewhere on the results page is a nutrition information facts area with a dropdown
             And the caloric difference of bacon pan-fried versus bacon baked is 43 versus 44 calories per slice
-            #And the bacon format with the highest calories per serving is bacon raw
-            #And the temperature in Bacon, Indian will be above freezing on Saturday
+            And the bacon format with the highest calories per serving is bacon raw
+            And the temperature in Bacon, Indiana will be above freezing on Saturday

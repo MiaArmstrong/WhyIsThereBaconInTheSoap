@@ -10,7 +10,7 @@ Initial Setup Guide:
 5. Install Git
 6. Clone Repo from Github 
 7. Install Cucumber-js
-8. Install Chai
+8. Install Node-Fetch
 
 ---
 
@@ -30,6 +30,8 @@ Note: Alternately (to 5 and 6) you can just install git bash and then navigate t
 
 7. From the command line or the terminal in VS Code: install cucumber-js by entering `npm install --save-dev @cucumber/cucumber` (cucumber is a test framework for behavior driven JavaScript development - this is so we can write tests in Gherkin and use feature files.)
 
+8. From the command line or the terminal in VS Code: install node-fetch by entering `npm install node-fetch` (used to fetch API directly)
+
 
 If you need more guidance [here](https://www.youtube.com/watch?v=Fk12ELJ9Bww) is a good video on how to install and use git on VS Code.
 
@@ -48,5 +50,26 @@ How to Run the tests:
 Other Information:
 
 This test suite is designed to run on Chrome. This test suite was developed on Windows but should be able to run on Windows or Mac (Chrome).
+
+If you want to see the cucumber report (and I know you do!) you can follow the link in the terminal "View your Cucumber Report at:"
+If you don't see a link and instead see a box with instructions on how to set up the report, you will need to set two environmental variables. 
+
+To set environmental variables in the VS code terminal:
+`$env:CUCUMBER_PUBLISH_TOKEN='db2d7cc9-cf9e-4707-a601-769ff68d6dee'`
+and then
+`$env:CUCUMBER_PUBLISH_ENABLED='true'`
+
+that's it. Now run the test suite using the same `npm test` command and there will be a link you can follow at the bottom of the test results to see the cucumber report. You will need to login to Gitlab to see the report.
+
+# Approach:
+
+- This framework uses page object model. All the reusable generic functions are located in the base page. The page specific functions are located on their specific page (googleSearchPage, etc.). All the functions that drive the test steps are in the Step Definition file. All the BDD scenarios/ steps are in the feature file. The locators are organized at the top of each page object file for ease of access for updates, etc. 
+
+- All the locators are using xpaths but could use other types of locators. 
+
+- The API request is done using node-fetch. The API endpoint was found through research but is static becasue it represents a physical location so although I could have gotten that endpoint programmatically I chose to use get the endpoint and set it. 
+
+- More work could be done to customize the cucumber report. I would like to see the assertions for each step in the report itself. I would also like to set the variables when the test is run instead of having to do it manually. 
+
 
 
