@@ -42,8 +42,6 @@ How to Run the tests:
 1. Complete the setup steps above.
 2. ensure that Chromedriver is up to date `npm install chromedriver`
 3. run the test suite from the command line or from the VS Code terminal by navigating to the WhyIsThereBaconInTheSoap directory and then entering `npm test` into the command line/ terminal
-4. Running the regression suite will create a report file that is located in the project directory. This file has the test results listed by scenario. 
-
 
 ---
 
