@@ -1,5 +1,5 @@
 # WhyIsThereBaconInTheSoap
-Test Automation Sample utilizing Node.js, CucumberJS, Selenium Webdriver, NPM, and Chai
+Test Automation Sample utilizing Node.js, CucumberJS, Selenium Webdriver, NPM, and node-fetch
 
 Initial Setup Guide:
 
